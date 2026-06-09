@@ -1,0 +1,31 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e293b" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#16a34a" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  
+  {/* Background */}
+  <rect width="600" height="400" fill="url(#bg)" rx="16" />
+  
+  {/* Abstract clinic waiting interior lines */}
+  <path d="M 0 320 Q 150 280 300 320 T 600 320 L 600 400 L 0 400 Z" fill="#1e293b" opacity="0.5"/>
+  <path d="M 0 350 Q 200 320 400 360 T 600 330 L 600 400 L 0 400 Z" fill="url(#primaryGrad)" opacity="0.15"/>
+  
+  {/* Clinic Logo Mark */}
+  <g transform="translate(300, 150)" text-anchor="middle">
+    <rect x="-35" y="-55" width="70" height="70" rx="18" fill="url(#primaryGrad)" />
+    <path d="M -12 -20 H 12 M 0 -32 V -8" stroke="white" stroke-width="6" stroke-linecap="round" />
+    
+    <text x="0" y="50" font-family="'Poppins', sans-serif" font-weight="700" font-size="28" fill="#ffffff">ZAINAB CLINIC</text>
+    <text x="0" y="75" font-family="'Inter', sans-serif" font-weight="500" font-size="14" fill="#a1a1aa" letter-spacing="4">WAITING LOUNGE</text>
+  </g>
+
+  {/* Floor lighting */}
+  <circle cx="300" cy="380" r="120" fill="#16a34a" opacity="0.1" filter="blur(60px)" />
+</svg>

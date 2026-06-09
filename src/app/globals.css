@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-heading: var(--font-poppins), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+
+  --color-primary: #0F766E;
+  --color-primary-hover: #0d605a;
+  --color-primary-light: #14B8A6;
+  --color-accent: #0F172A;
+  --color-accent-hover: #1e293b;
+  --color-accent-light: #E6FFFA;
+  --color-muted: #64748B;
+  --color-light: #F8FAFC;
+}
+
+:root {
+  --background: #F8FAFC;
+  --foreground: #0F172A;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Medical Premium Utilities */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(15, 118, 110, 0.08);
+}
+
+.medical-shadow {
+  box-shadow: 0 10px 30px -10px rgba(15, 118, 110, 0.08);
+}
+
+.medical-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.medical-shadow-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -12px rgba(15, 118, 110, 0.15);
+  border-color: rgba(20, 184, 166, 0.3);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #0F766E 0%, #0F172A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #0F766E;
+}
+
+/* Timeline custom details */
+.timeline-line {
+  background: linear-gradient(to bottom, #0F766E 0%, #14B8A6 100%);
+}
