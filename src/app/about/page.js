@@ -45,11 +45,11 @@ export default function AboutPage() {
       {/* 1. Header Banner */}
       <section
         ref={headerRef}
-        className="relative py-20 bg-gradient-to-b from-emerald-50/40 via-white to-white border-b border-slate-50 text-center overflow-hidden"
+        className="relative py-20 bg-gradient-to-b from-accent-light/40 via-white to-white border-b border-slate-50 text-center overflow-hidden"
       >
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 h-64 w-64 rounded-full bg-emerald-100/30 blur-3xl pointer-events-none" />
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 h-64 w-64 rounded-full bg-accent-light/50 blur-3xl pointer-events-none" />
         <div className="max-w-7xl mx-auto px-4 relative z-10 space-y-4">
-          <div className="inline-block bg-emerald-50 border border-emerald-100 text-primary text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider font-semibold">
+          <div className="inline-block bg-accent-light border border-primary/10 text-primary text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider font-semibold">
             About Our Clinic
           </div>
           <h1 className="text-4xl md:text-5xl font-extrabold text-accent">
@@ -79,7 +79,7 @@ export default function AboutPage() {
             {/* Trust factors */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
               <div className="flex gap-3 items-start">
-                <div className="h-6 w-6 rounded-md bg-emerald-50 text-primary flex items-center justify-center shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-md bg-accent-light text-primary flex items-center justify-center shrink-0 mt-0.5">
                   <ShieldCheck className="h-4 w-4" />
                 </div>
                 <div>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 </div>
               </div>
               <div className="flex gap-3 items-start">
-                <div className="h-6 w-6 rounded-md bg-emerald-50 text-primary flex items-center justify-center shrink-0 mt-0.5">
+                <div className="h-6 w-6 rounded-md bg-accent-light text-primary flex items-center justify-center shrink-0 mt-0.5">
                   <Heart className="h-4 w-4" />
                 </div>
                 <div>
@@ -101,15 +101,15 @@ export default function AboutPage() {
 
           {/* Doctor Card */}
           <div className="lg:col-span-5 bg-slate-900 rounded-3xl p-8 text-white border border-slate-800 shadow-xl relative">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-emerald-500/10 rounded-full blur-2xl" />
+            <div className="absolute top-0 right-0 w-24 h-24 bg-primary-light/10 rounded-full blur-2xl" />
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-xl bg-emerald-500 text-white flex items-center justify-center font-bold text-lg">
+                <div className="h-12 w-12 rounded-xl bg-primary text-white flex items-center justify-center font-bold text-lg">
                   Dr
                 </div>
                 <div>
                   <h3 className="font-heading font-bold text-lg text-white">Dr. M. Shoeb Shaikh</h3>
-                  <p className="text-emerald-400 text-xs font-semibold">B.A.M.S. Physician</p>
+                  <p className="text-primary-light text-xs font-semibold">B.A.M.S. Physician</p>
                 </div>
               </div>
               <p className="text-slate-300 text-xs leading-relaxed font-sans">
@@ -133,7 +133,7 @@ export default function AboutPage() {
           >
             {/* Mission Card */}
             <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm flex gap-6">
-              <div className="h-12 w-12 rounded-2xl bg-emerald-50 text-primary flex items-center justify-center shrink-0">
+              <div className="h-12 w-12 rounded-2xl bg-accent-light text-primary flex items-center justify-center shrink-0">
                 <Target className="h-6 w-6" />
               </div>
               <div className="space-y-3">
@@ -146,7 +146,7 @@ export default function AboutPage() {
 
             {/* Vision Card */}
             <div className="bg-white p-8 md:p-10 rounded-3xl border border-slate-100 shadow-sm flex gap-6">
-              <div className="h-12 w-12 rounded-2xl bg-emerald-50 text-primary flex items-center justify-center shrink-0">
+              <div className="h-12 w-12 rounded-2xl bg-accent-light text-primary flex items-center justify-center shrink-0">
                 <Eye className="h-6 w-6" />
               </div>
               <div className="space-y-3">
@@ -165,7 +165,7 @@ export default function AboutPage() {
         
         {/* Timeline Header */}
         <div ref={timelineHeaderRef} className="text-center max-w-2xl mx-auto mb-20 space-y-4">
-          <div className="inline-block bg-emerald-50 border border-emerald-100 text-primary text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider font-semibold">
+          <div className="inline-block bg-accent-light border border-primary/10 text-primary text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider font-semibold">
             History Timeline
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-accent leading-tight">

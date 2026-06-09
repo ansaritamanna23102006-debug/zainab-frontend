@@ -127,14 +127,14 @@ export default function AppointmentPage() {
     <div className="bg-slate-50 min-h-[90vh] py-16 flex items-center justify-center relative overflow-hidden">
       
       {/* Decorative blobs */}
-      <div className="absolute top-10 right-10 h-72 w-72 rounded-full bg-emerald-100/30 blur-3xl pointer-events-none" />
+      <div className="absolute top-10 right-10 h-72 w-72 rounded-full bg-accent-light/50 blur-3xl pointer-events-none" />
       <div className="absolute bottom-10 left-10 h-72 w-72 rounded-full bg-slate-200/50 blur-3xl pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 w-full relative z-10">
         
         {/* Section Header */}
         <div className="text-center mb-12 space-y-3">
-          <div className="inline-block bg-emerald-50 border border-emerald-100 text-primary text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider font-semibold">
+          <div className="inline-block bg-accent-light border border-primary/10 text-primary text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider font-semibold">
             Slot Booking
           </div>
           <h1 className="text-3xl md:text-4xl font-extrabold text-accent">
@@ -153,7 +153,7 @@ export default function AppointmentPage() {
           {successData ? (
             /* Success screen state */
             <div className="text-center py-8 space-y-6 animate-fade-in">
-              <div className="h-16 w-16 bg-emerald-50 text-primary rounded-full flex items-center justify-center mx-auto shadow-md border border-emerald-100">
+              <div className="h-16 w-16 bg-accent-light text-primary rounded-full flex items-center justify-center mx-auto shadow-md border border-primary/10">
                 <Sparkles className="h-8 w-8 animate-pulse" />
               </div>
               <div className="space-y-2">

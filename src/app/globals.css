@@ -4,14 +4,15 @@
   --font-heading: var(--font-poppins), system-ui, sans-serif;
   --font-sans: var(--font-inter), system-ui, sans-serif;
 
-  --color-primary: #0F766E;
-  --color-primary-hover: #0d605a;
-  --color-primary-light: #14B8A6;
+  --color-primary: #0D9488;
+  --color-primary-hover: #0b7f75;
+  --color-primary-light: #10B981;
   --color-accent: #0F172A;
   --color-accent-hover: #1e293b;
-  --color-accent-light: #E6FFFA;
+  --color-accent-light: #ECFEFF;
   --color-muted: #64748B;
   --color-light: #F8FAFC;
+
 }
 
 :root {

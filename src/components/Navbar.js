@@ -68,30 +68,6 @@ export default function Navbar() {
             : 'bg-transparent border-b border-transparent'
         }`}
       >
-        {/* Clinic Info Sub-Navbar Top Row (Hidden on Scroll or Mobile) */}
-        <div className={`bg-primary text-white text-[11px] py-1.5 font-sans font-medium transition-all duration-300 hidden md:block ${
-          isScrolled ? 'h-0 py-0 opacity-0 overflow-hidden' : 'opacity-100'
-        }`}>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
-            <div className="flex items-center gap-6">
-              <span className="flex items-center gap-1.5">
-                <Clock className="h-3.5 w-3.5 text-accent-light" />
-                <span>Timing: Mon-Sat 9 AM - 1 PM, 5 PM - 9 PM</span>
-              </span>
-              <span className="flex items-center gap-1.5">
-                <MapPin className="h-3.5 w-3.5 text-accent-light" />
-                <span>Sangam Complex, Ambernath (W)</span>
-              </span>
-            </div>
-            <div className="flex items-center gap-4">
-              <span>Registration No: I-84363-A-1</span>
-              <span>•</span>
-              <a href="tel:7021096008" className="font-semibold hover:text-accent-light transition-colors">
-                Emergency Hotline: +91 7021096008
-              </a>
-            </div>
-          </div>
-        </div>
 
         {/* Primary Navbar Row */}
         <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 transition-all duration-300 ${
