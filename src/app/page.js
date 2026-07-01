@@ -1,10 +1,12 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 import Hero from '@/sections/Hero';
-import WhyChooseUs from '@/sections/WhyChooseUs';
-import DoctorSection from '@/sections/DoctorSection';
-import ServicesHome from '@/sections/ServicesHome';
-import TestimonialsSlider from '@/components/TestimonialsSlider';
-import ContactSection from '@/sections/ContactSection';
+
+const WhyChooseUs = dynamic(() => import('@/sections/WhyChooseUs'));
+const DoctorSection = dynamic(() => import('@/sections/DoctorSection'));
+const ServicesHome = dynamic(() => import('@/sections/ServicesHome'));
+const TestimonialsSlider = dynamic(() => import('@/components/TestimonialsSlider'));
+const ContactSection = dynamic(() => import('@/sections/ContactSection'));
 
 export const metadata = {
   title: "Zainab Clinic | Dr. Mohammad Shoeb Shaikh (B.A.M.S.) | Ambernath West",
