@@ -1,4 +1,5 @@
 import { Poppins, Inter } from "next/font/google";
+import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
@@ -142,6 +143,8 @@ const clinicSchema = {
   }
 };
 
+const gaId = process.env.NEXT_PUBLIC_GA_ID || "G-ZAINABCLINIC";
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable}`}>
@@ -152,6 +155,19 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased min-h-screen flex flex-col">
+        {/* Google Analytics GA4 Script */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gaId}');
+          `}
+        </Script>
         <Navbar />
         {/* Main wrapper starts with padding to offset fixed navbar */}
         <main className="flex-grow pt-20">
