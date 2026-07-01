@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { cn } from '@/lib/utils';
 
 export default function Button({
@@ -9,6 +10,7 @@ export default function Button({
   type = 'button',
   disabled = false,
   onClick,
+  href,
   ...props
 }) {
   const baseStyles = 'inline-flex items-center justify-center font-heading font-medium rounded-full transition-all duration-300 active:scale-95 focus:outline-none focus:ring-2 focus:ring-primary/20 disabled:pointer-events-none disabled:opacity-50 hover:shadow-lg';
@@ -27,10 +29,36 @@ export default function Button({
     lg: 'px-8 py-3.5 text-base',
   };
 
+  const combinedClassName = cn(baseStyles, variants[variant], sizes[size], className);
+
+  if (href) {
+    const isExternal = href.startsWith('http') || href.startsWith('tel:') || href.startsWith('mailto:') || href.startsWith('https://') || href.startsWith('wa.me');
+    if (isExternal) {
+      return (
+        <a
+          href={href}
+          className={combinedClassName}
+          {...props}
+        >
+          {children}
+        </a>
+      );
+    }
+    return (
+      <Link
+        href={href}
+        className={combinedClassName}
+        {...props}
+      >
+        {children}
+      </Link>
+    );
+  }
+
   return (
     <button
       type={type}
-      className={cn(baseStyles, variants[variant], sizes[size], className)}
+      className={combinedClassName}
       disabled={disabled}
       onClick={onClick}
       {...props}

@@ -83,7 +83,7 @@ export default function AboutClient() {
                   <ShieldCheck className="h-4 w-4" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-accent text-sm">Registered Integrity</h4>
+                  <h3 className="font-bold text-accent text-sm">Registered Integrity</h3>
                   <p className="text-xs text-slate-500">MMC Reg. No: I-84363-A-1</p>
                 </div>
               </div>
@@ -92,7 +92,7 @@ export default function AboutClient() {
                   <Heart className="h-4 w-4" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-accent text-sm">Empathetic Care</h4>
+                  <h3 className="font-bold text-accent text-sm">Empathetic Care</h3>
                   <p className="text-xs text-slate-500">Patient wellbeing is our core guide</p>
                 </div>
               </div>
@@ -108,7 +108,7 @@ export default function AboutClient() {
                   Dr
                 </div>
                 <div>
-                  <h3 className="font-heading font-bold text-lg text-white">Dr. M. Shoeb Shaikh</h3>
+                  <p className="font-heading font-bold text-lg text-white">Dr. M. Shoeb Shaikh</p>
                   <p className="text-primary-light text-xs font-semibold">B.A.M.S. Physician</p>
                 </div>
               </div>

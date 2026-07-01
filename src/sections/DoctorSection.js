@@ -78,9 +78,9 @@ export default function DoctorSection() {
                   <Award className="h-8 w-8" />
                 </div>
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold font-heading text-accent leading-tight">
+                  <p className="text-xl sm:text-2xl font-bold font-heading text-white leading-tight">
                     Dr. Mohammad Shoeb Shaikh
-                  </h3>
+                  </p>
                   <p className="text-primary-light font-bold text-xs uppercase tracking-wider mt-0.5">
                     Lead General Physician
                   </p>
@@ -155,16 +155,12 @@ export default function DoctorSection() {
 
             {/* CTA action buttons */}
             <div className="doctor-fade-up pt-4 flex flex-wrap gap-4">
-              <Link href="/about">
-                <Button variant="accent" size="md" className="border border-primary-light/10 font-bold">
-                  View Full Profile
-                </Button>
-              </Link>
-              <Link href="/appointment">
-                <Button variant="outline" size="md" className="font-bold">
-                  Book Slot
-                </Button>
-              </Link>
+              <Button href="/about" variant="accent" size="md" className="border border-primary-light/10 font-bold">
+                View Full Profile
+              </Button>
+              <Button href="/appointment" variant="outline" size="md" className="font-bold">
+                Book Slot
+              </Button>
             </div>
           </div>
 

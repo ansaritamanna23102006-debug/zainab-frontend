@@ -160,6 +160,7 @@ export default function Navbar() {
               <button
                 onClick={toggleMenu}
                 className="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-accent"
+                aria-label="Close menu"
               >
                 <X className="h-4 w-4" />
               </button>

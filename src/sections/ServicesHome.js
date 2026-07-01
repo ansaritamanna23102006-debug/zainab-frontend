@@ -103,12 +103,10 @@ export default function ServicesHome() {
             </p>
           </div>
           <div ref={ctaRef} className="shrink-0 flex justify-center">
-            <Link href="/services">
-              <Button variant="outline" className="flex items-center gap-2 border-primary/20 hover:border-primary">
-                <span>View Detailed Procedures</span>
-                <ArrowRight className="h-4 w-4" />
-              </Button>
-            </Link>
+            <Button href="/services" variant="outline" className="flex items-center gap-2 border-primary/20 hover:border-primary">
+              <span>View Detailed Procedures</span>
+              <ArrowRight className="h-4 w-4" />
+            </Button>
           </div>
         </div>
 

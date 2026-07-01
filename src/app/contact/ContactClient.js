@@ -124,7 +124,7 @@ export default function ContactClient() {
                     <MapPin className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-accent text-sm mb-1">Clinic Address</h4>
+                    <h3 className="font-bold text-accent text-sm mb-1">Clinic Address</h3>
                     <a
                       href="https://maps.google.com/?q=Zainab+Clinic+Sangam+Complex+Ambernath+West"
                       target="_blank"
@@ -143,7 +143,7 @@ export default function ContactClient() {
                     <Phone className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-accent text-sm mb-1">Direct Call</h4>
+                    <h3 className="font-bold text-accent text-sm mb-1">Direct Call</h3>
                     <p className="text-slate-600 text-xs font-semibold">
                       +91 70210 96008
                     </p>
@@ -156,7 +156,7 @@ export default function ContactClient() {
                     <Mail className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-accent text-sm mb-1">Direct Email</h4>
+                    <h3 className="font-bold text-accent text-sm mb-1">Direct Email</h3>
                     <p className="text-slate-600 text-xs">
                       info@zainabclinic.com
                     </p>
@@ -169,7 +169,7 @@ export default function ContactClient() {
                     <Clock className="h-5 w-5" />
                   </div>
                   <div>
-                    <h4 className="font-bold text-accent text-sm mb-1.5">Consultation Hours</h4>
+                    <h3 className="font-bold text-accent text-sm mb-1.5">Consultation Hours</h3>
                     <p className="text-slate-600 text-xs font-medium">
                       Mon - Sat: 9:00 AM - 1:00 PM <br />
                       Evening: 5:00 PM - 9:00 PM

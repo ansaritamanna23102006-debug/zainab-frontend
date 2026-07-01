@@ -119,7 +119,7 @@ export default function ContactSection() {
                   <MapPin className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-1">Clinic Address</h4>
+                  <h3 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-1">Clinic Address</h3>
                   <a
                     href="https://maps.google.com/?q=Zainab+Clinic+Sangam+Complex+Ambernath+West"
                     target="_blank"
@@ -137,7 +137,7 @@ export default function ContactSection() {
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-1">Phone Numbers</h4>
+                  <h3 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-1">Phone Numbers</h3>
                   <a href="tel:7021096008" className="hover:text-primary transition-colors block font-semibold text-accent text-xs">
                     +91 70210 96008
                   </a>
@@ -149,7 +149,7 @@ export default function ContactSection() {
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <h4 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-1">Direct Email</h4>
+                  <h3 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-1">Direct Email</h3>
                   <a href="mailto:info@zainabclinic.com" className="hover:text-primary transition-colors block text-xs text-muted">
                     info@zainabclinic.com
                   </a>
@@ -161,7 +161,7 @@ export default function ContactSection() {
                   <Clock className="h-5 w-5" />
                 </div>
                 <div className="w-full">
-                  <h4 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-2">Consultation Timings</h4>
+                  <h3 className="font-heading font-bold text-accent text-xs uppercase tracking-widest mb-2">Consultation Timings</h3>
                   <div className="grid grid-cols-2 gap-4 text-xs font-sans">
                     <div>
                       <p className="font-bold text-slate-800">Monday - Saturday</p>

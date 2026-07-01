@@ -125,19 +125,25 @@ export default function Hero() {
               ref={buttonsRef}
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4"
             >
-              <Link href="/appointment" className="w-full sm:w-auto">
-                <Button variant="primary" size="lg" className="w-full sm:w-auto flex items-center justify-center gap-2 py-4 shadow-lg shadow-primary/10">
-                  <Calendar className="h-4.5 w-4.5" />
-                  <span>Book Appointment</span>
-                </Button>
-              </Link>
+              <Button
+                href="/appointment"
+                variant="primary"
+                size="lg"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 py-4 shadow-lg shadow-primary/10"
+              >
+                <Calendar className="h-4.5 w-4.5" />
+                <span>Book Appointment</span>
+              </Button>
 
-              <a href="tel:7021096008" className="w-full sm:w-auto">
-                <Button variant="secondary" size="lg" className="w-full sm:w-auto flex items-center justify-center gap-2 py-4 border border-slate-200">
-                  <Phone className="h-4.5 w-4.5 text-primary" />
-                  <span>Call: 7021096008</span>
-                </Button>
-              </a>
+              <Button
+                href="tel:7021096008"
+                variant="secondary"
+                size="lg"
+                className="w-full sm:w-auto flex items-center justify-center gap-2 py-4 border border-slate-200"
+              >
+                <Phone className="h-4.5 w-4.5 text-primary" />
+                <span>Call: 7021096008</span>
+              </Button>
             </div>
 
             {/* Medical Highlights Grid */}
