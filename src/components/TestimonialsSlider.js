@@ -242,7 +242,7 @@ export default function TestimonialsSlider() {
                     {active.initials}
                   </div>
                   <div>
-                    <h4 className="font-bold text-white text-sm font-heading">{active.name}</h4>
+                    <h3 className="font-bold text-white text-sm font-heading">{active.name}</h3>
                     <p className="text-[11px] text-teal-400 font-semibold tracking-wide uppercase">{active.role}</p>
                   </div>
                 </div>
@@ -260,24 +260,28 @@ export default function TestimonialsSlider() {
                   <button
                     key={i}
                     onClick={() => goTo(i)}
-                    className={`h-2 rounded-full transition-all duration-300 ${
-                      i === activeIdx ? 'w-8 bg-teal-400' : 'w-2 bg-slate-600 hover:bg-slate-500'
-                    }`}
+                    className="py-3 px-1.5 flex items-center focus:outline-none"
                     aria-label={`Go to testimonial ${i + 1}`}
-                  />
+                  >
+                    <span
+                      className={`h-2 rounded-full transition-all duration-300 block ${
+                        i === activeIdx ? 'w-8 bg-teal-400' : 'w-2 bg-slate-600 hover:bg-slate-500'
+                      }`}
+                    />
+                  </button>
                 ))}
               </div>
               <div className="flex gap-3">
                 <button
                   onClick={slidePrev}
-                  className="h-10 w-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:bg-teal-700/30 hover:text-white hover:border-teal-600/40 active:scale-95 transition-all duration-200"
+                  className="h-11 w-11 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:bg-teal-700/30 hover:text-white hover:border-teal-600/40 active:scale-95 transition-all duration-200"
                   aria-label="Previous review"
                 >
                   <ChevronLeft className="h-5 w-5" />
                 </button>
                 <button
                   onClick={slideNext}
-                  className="h-10 w-10 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:bg-teal-700/30 hover:text-white hover:border-teal-600/40 active:scale-95 transition-all duration-200"
+                  className="h-11 w-11 flex items-center justify-center rounded-xl border border-white/10 bg-white/5 text-slate-400 hover:bg-teal-700/30 hover:text-white hover:border-teal-600/40 active:scale-95 transition-all duration-200"
                   aria-label="Next review"
                 >
                   <ChevronRight className="h-5 w-5" />

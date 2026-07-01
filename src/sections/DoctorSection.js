@@ -84,7 +84,7 @@ export default function DoctorSection() {
                   <Award className="h-8 w-8" />
                 </div>
                 <div>
-                  <p className="text-xl sm:text-2xl font-bold font-heading text-white leading-tight">
+                  <p className="text-xl sm:text-2xl font-bold font-heading text-accent leading-tight">
                     Dr. Mohammad Shoeb Shaikh
                   </p>
                   <p className="text-primary-light font-bold text-xs uppercase tracking-wider mt-0.5">
