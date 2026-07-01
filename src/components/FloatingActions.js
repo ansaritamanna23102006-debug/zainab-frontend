@@ -8,6 +8,9 @@ export default function FloatingActions() {
   const containerRef = useRef(null);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     // Subtle entry animation for floating buttons
     gsap.fromTo(
       containerRef.current.children,

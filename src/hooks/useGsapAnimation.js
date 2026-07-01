@@ -21,6 +21,11 @@ export default function useGsapAnimation(options = {}) {
     const el = elementRef.current;
     if (!el) return;
 
+    // Skip animations on mobile for performance (reduces layout shift & main thread block)
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
+
     const {
       animationType = 'fade-up',
       duration = 0.8,

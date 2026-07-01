@@ -11,6 +11,9 @@ export default function ContactSection() {
   const mapRef     = useRef(null);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     const ctx = gsap.context(() => {
 
       /* ── 1. Section header reveal ── */

@@ -16,6 +16,9 @@ export default function DoctorSection() {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     let ctx = gsap.context(() => {
       // Animate the counters
       STATS.forEach((stat) => {
@@ -31,6 +34,9 @@ export default function DoctorSection() {
             trigger: el,
             start: 'top 95%',
             toggleActions: 'play none none none',
+          },
+          onStart: () => {
+            el.innerText = '0' + stat.suffix;
           },
           onUpdate: () => {
             el.innerText = Math.floor(countObj.val).toLocaleString() + stat.suffix;
@@ -144,7 +150,7 @@ export default function DoctorSection() {
                     id={stat.id}
                     className="block text-2xl sm:text-4xl font-extrabold text-primary font-heading tracking-tight"
                   >
-                    0{stat.suffix}
+                    {stat.value.toLocaleString()}{stat.suffix}
                   </span>
                   <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest">
                     {stat.label}

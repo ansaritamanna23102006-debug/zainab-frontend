@@ -56,6 +56,10 @@ export default function TestimonialsSlider() {
   /* ── Slide transition ── */
   const goTo = (idx) => {
     if (!cardRef.current) { setActiveIdx(idx); return; }
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      setActiveIdx(idx);
+      return;
+    }
     gsap.to(cardRef.current, {
       opacity: 0, y: 14, scale: 0.97,
       duration: 0.22,
@@ -82,6 +86,9 @@ export default function TestimonialsSlider() {
 
   /* ── Scroll-triggered intro animations ── */
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     const ctx = gsap.context(() => {
 
       /* Header reveal */

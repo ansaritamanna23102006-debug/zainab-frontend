@@ -36,6 +36,9 @@ export default function Footer() {
   const footerRef   = useRef(null);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     const ctx = gsap.context(() => {
 
       /* ── Columns stagger reveal ── */

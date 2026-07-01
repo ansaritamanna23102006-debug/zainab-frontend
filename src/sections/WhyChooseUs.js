@@ -78,6 +78,9 @@ export default function WhyChooseUs() {
   const ctaRef      = useRef(null);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     const ctx = gsap.context(() => {
 
       /* ── 1. Section header reveal (badge → title → subtitle) ── */
@@ -112,6 +115,9 @@ export default function WhyChooseUs() {
             trigger: statsRef.current,
             start: 'top 88%',
             toggleActions: 'play none none none',
+          },
+          onStart: () => {
+            el.textContent = '0' + stat.suffix;
           },
           onUpdate: () => {
             el.textContent = Math.floor(obj.val) + stat.suffix;
@@ -208,7 +214,7 @@ export default function WhyChooseUs() {
           {STATS.map((stat) => (
             <div key={stat.id} className="flex flex-col items-center justify-center bg-white rounded-2xl border border-slate-100 shadow-sm py-5 px-3">
               <span id={stat.id} className="text-3xl font-extrabold text-primary tracking-tight">
-                0{stat.suffix}
+                {stat.value}{stat.suffix}
               </span>
               <span className="text-xs text-slate-500 font-medium mt-1 text-center">{stat.label}</span>
             </div>

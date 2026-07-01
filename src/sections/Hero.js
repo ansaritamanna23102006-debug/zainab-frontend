@@ -15,6 +15,9 @@ export default function Hero() {
   const cardsRef = useRef(null);
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     let ctx = gsap.context(() => {
       // 1. Text reveals
       gsap.fromTo(

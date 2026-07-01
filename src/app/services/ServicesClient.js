@@ -159,6 +159,9 @@ export default function ServicesClient() {
   const Icon = selectedService.icon;
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && window.innerWidth <= 768) {
+      return;
+    }
     if (detailContainerRef.current) {
       gsap.fromTo(
         detailContainerRef.current,
