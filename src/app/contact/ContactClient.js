@@ -125,10 +125,15 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <h4 className="font-bold text-accent text-sm mb-1">Clinic Address</h4>
-                    <p className="text-slate-600 text-xs leading-relaxed">
+                    <a
+                      href="https://maps.google.com/?q=Zainab+Clinic+Sangam+Complex+Ambernath+West"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-slate-600 text-xs leading-relaxed hover:text-primary transition-colors block"
+                    >
                       Sangam Complex, Opp. Muthoot Finance, <br />
                       Woollen Chawl, Ambernath (W) - 421501
-                    </p>
+                    </a>
                   </div>
                 </div>
 

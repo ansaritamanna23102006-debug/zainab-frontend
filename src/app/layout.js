@@ -18,6 +18,12 @@ const inter = Inter({
   display: "swap",
 });
 
+export const viewport = {
+  themeColor: "#0f172a",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata = {
   title: "Zainab Clinic | Dr. Mohammad Shoeb Shaikh (B.A.M.S.) | Ambernath West",
   description: "Zainab Clinic, run by General Physician Dr. Mohammad Shoeb Shaikh (B.A.M.S.), provides premium and compassionate healthcare services in Ambernath West. Book your consultation today.",
@@ -27,6 +33,11 @@ export const metadata = {
   metadataBase: new URL("https://zainabclinic.com"), // Placeholders for production
   alternates: {
     canonical: "/",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/images/apple-touch-icon.png",
   },
   openGraph: {
     title: "Zainab Clinic - Your Family's Trusted Healthcare Partner",

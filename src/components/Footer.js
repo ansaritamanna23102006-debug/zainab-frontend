@@ -120,9 +120,9 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex gap-3">
               {[
-                { icon: Facebook, label: 'Facebook', href: '#' },
-                { icon: Instagram, label: 'Instagram', href: '#' },
-                { icon: Twitter,  label: 'Twitter / X', href: '#' },
+                { icon: Facebook, label: 'Facebook', href: 'https://www.facebook.com/zainabclinic' },
+                { icon: Instagram, label: 'Instagram', href: 'https://www.instagram.com/zainabclinic' },
+                { icon: Twitter,  label: 'Twitter / X', href: 'https://twitter.com/zainabclinic' },
               ].map(({ icon: Icon, label, href }) => (
                 <a
                   key={label}
@@ -180,10 +180,15 @@ export default function Footer() {
                 <div className="flex-shrink-0 h-8 w-8 rounded-lg bg-teal-900/30 border border-teal-800/40 flex items-center justify-center">
                   <MapPin className="h-3.5 w-3.5 text-teal-400" />
                 </div>
-                <p className="text-sm leading-relaxed pt-0.5">
+                <a
+                  href="https://maps.google.com/?q=Zainab+Clinic+Sangam+Complex+Ambernath+West"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm leading-relaxed pt-0.5 hover:text-teal-400 transition-colors block"
+                >
                   Sangam Complex, Opp. Muthoot Finance,<br />
                   Woollen Chawl, Ambernath (W) - 421501
-                </p>
+                </a>
               </li>
               <li className="flex gap-3 items-center">
                 <div className="flex-shrink-0 h-8 w-8 rounded-lg bg-teal-900/30 border border-teal-800/40 flex items-center justify-center">
