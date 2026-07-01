@@ -152,7 +152,7 @@ export default function DoctorSection() {
                   >
                     {stat.value.toLocaleString()}{stat.suffix}
                   </span>
-                  <span className="block text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                  <span className="block text-[10px] font-bold text-slate-600 uppercase tracking-widest">
                     {stat.label}
                   </span>
                 </div>

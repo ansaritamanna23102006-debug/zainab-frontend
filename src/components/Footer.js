@@ -131,7 +131,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="h-11 w-11 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 text-slate-400 hover:bg-teal-700/30 hover:text-teal-300 hover:border-teal-600/40 active:scale-95 transition-all duration-200"
+                  className="h-11 w-11 flex items-center justify-center rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:bg-teal-700/30 hover:text-teal-300 hover:border-teal-600/40 active:scale-95 transition-all duration-200"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -237,8 +237,8 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="footer-bottom-bar relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-400">
-          <p>&copy; {currentYear} <span className="text-slate-400 font-medium">Zainab Clinic</span>. All rights reserved.</p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-300">
+          <p>&copy; {currentYear} <span className="text-slate-300 font-medium">Zainab Clinic</span>. All rights reserved.</p>
           <p className="flex items-center gap-1.5">
             <HeartPulse className="h-3.5 w-3.5 text-teal-700" />
             <span>Designed to inspire trust. Qualified care.</span>

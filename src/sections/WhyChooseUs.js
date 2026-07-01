@@ -204,7 +204,7 @@ export default function WhyChooseUs() {
               <span className="absolute bottom-1 left-0 w-full h-2 bg-accent-light -z-0 rounded" />
             </span>
           </h2>
-          <p ref={subtitleRef} className="text-slate-500 text-sm md:text-base mt-4 leading-relaxed">
+          <p ref={subtitleRef} className="text-slate-600 text-sm md:text-base mt-4 leading-relaxed">
             We combine Ayurvedic expertise with modern medicine to deliver care that is compassionate, thorough, and results-driven.
           </p>
         </div>
@@ -216,7 +216,7 @@ export default function WhyChooseUs() {
               <span id={stat.id} className="text-3xl font-extrabold text-primary tracking-tight">
                 {stat.value}{stat.suffix}
               </span>
-              <span className="text-xs text-slate-500 font-medium mt-1 text-center">{stat.label}</span>
+              <span className="text-xs text-slate-600 font-medium mt-1 text-center">{stat.label}</span>
             </div>
           ))}
         </div>
@@ -244,7 +244,7 @@ export default function WhyChooseUs() {
                   <h3 className="text-base font-bold text-[#0F172A] font-heading mb-2 group-hover:text-primary transition-colors duration-200">
                     {card.title}
                   </h3>
-                  <p className="text-slate-500 text-sm leading-relaxed">{card.desc}</p>
+                  <p className="text-slate-600 text-sm leading-relaxed">{card.desc}</p>
                 </div>
                 <div className="mt-6 h-0.5 w-0 bg-gradient-to-r from-primary to-primary-light rounded-full group-hover:w-full transition-all duration-500 ease-out" />
               </div>
@@ -255,10 +255,10 @@ export default function WhyChooseUs() {
         {/* Bottom CTA Strip */}
         <div
           ref={ctaRef}
-          className="mt-16 bg-gradient-to-r from-primary to-primary-hover rounded-2xl px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg shadow-primary/20"
+          className="mt-16 bg-gradient-to-r from-accent to-accent-hover rounded-2xl px-8 py-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg shadow-accent/20"
         >
           <div className="text-white text-center sm:text-left">
-            <p className="text-xs font-bold uppercase tracking-widest text-accent-light mb-1">Ready to Get Started?</p>
+            <p className="text-xs font-bold uppercase tracking-widest text-teal-400 mb-1">Ready to Get Started?</p>
             <h3 className="text-xl md:text-2xl font-extrabold leading-tight">Book Your Consultation Today</h3>
             <p className="text-white/90 text-sm mt-1 font-sans">Mon–Sat · 9 AM–1 PM &amp; 5 PM–9 PM</p>
           </div>

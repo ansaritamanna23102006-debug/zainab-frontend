@@ -83,7 +83,7 @@ export default function Navbar() {
                 <span className="text-xl font-bold font-heading text-accent tracking-tight flex items-center gap-1">
                   Zainab <span className="text-primary-light">Clinic</span>
                 </span>
-                <span className="block text-[10px] text-slate-500 font-semibold tracking-wider uppercase -mt-1">
+                <span className="block text-[10px] text-slate-600 font-semibold tracking-wider uppercase -mt-1">
                   Healthcare Partner
                 </span>
               </div>
