@@ -69,10 +69,10 @@ export default function AboutClient() {
             <h2 className="text-3xl font-bold text-accent">
               Our Journey & Dedication
             </h2>
-            <p className="text-slate-655 text-sm leading-relaxed font-sans">
+            <p className="text-slate-600 text-sm leading-relaxed font-sans">
               Founded by <strong className="text-accent">Dr. Mohammad Shoeb Shaikh</strong>, Zainab Clinic opened its doors in Ambernath (W) with a simple but powerful vision: to provide premium, trustworthy, and empathetic healthcare services. Over the years, the clinic has become a staple healthcare partner in the local community.
             </p>
-            <p className="text-slate-655 text-sm leading-relaxed font-sans">
+            <p className="text-slate-600 text-sm leading-relaxed font-sans">
               We specialize in blending diagnostics with holistic care to address the root causes of illnesses rather than just managing symptoms. Dr. Shoeb Shaikh focuses on patient comfort, making sure every visitor is fully educated about their recovery path, medications, and health status.
             </p>
             

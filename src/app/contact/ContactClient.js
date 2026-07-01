@@ -144,7 +144,7 @@ export default function ContactClient() {
                   </div>
                   <div>
                     <h4 className="font-bold text-accent text-sm mb-1">Direct Call</h4>
-                    <p className="text-slate-655 text-xs font-semibold">
+                    <p className="text-slate-600 text-xs font-semibold">
                       +91 70210 96008
                     </p>
                   </div>

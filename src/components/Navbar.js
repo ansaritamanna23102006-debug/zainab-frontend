@@ -124,7 +124,7 @@ export default function Navbar() {
             {/* Mobile Menu Icon */}
             <button
               onClick={toggleMenu}
-              className="md:hidden flex h-10 w-10 items-center justify-center rounded-full bg-slate-100 text-accent hover:bg-slate-200 transition-colors"
+              className="md:hidden flex h-11 w-11 items-center justify-center rounded-full bg-slate-100 text-accent hover:bg-slate-200 transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
